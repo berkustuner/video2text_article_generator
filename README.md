@@ -80,6 +80,7 @@ berkustuner-video2text_article_generator/
                 └── _yt-dlp
 
 
+
 ---
 
 ## ⚙️ Kurulum
