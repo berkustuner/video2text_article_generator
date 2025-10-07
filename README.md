@@ -36,6 +36,7 @@ AI destekli bu Django projesi, bir **YouTube videosunun linkini** alarak:
 
 ## 🗂️ Proje Yapısı
 
+'''
 berkustuner-video2text_article_generator/
 ├── manage.py
 ├── ai_blog_app/
@@ -78,7 +79,7 @@ berkustuner-video2text_article_generator/
         └── zsh/
             └── site-functions/
                 └── _yt-dlp
-
+'''
 
 
 ---
