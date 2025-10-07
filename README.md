@@ -36,50 +36,49 @@ AI destekli bu Django projesi, bir **YouTube videosunun linkini** alarak:
 
 ## 🗂️ Proje Yapısı
 
-` ` `
-berkustuner-video2text_article_generator
-|-- manage.py
-|-- ai_blog_app
-|   |-- __init__.py
-|   |-- asgi.py
-|   |-- settings.py
-|   |-- urls.py
-|   `-- wsgi.py
-|-- blog_generator
-|   |-- __init__.py
-|   |-- admin.py
-|   |-- apps.py
-|   |-- models.py
-|   |-- tests.py
-|   |-- urls.py
-|   |-- views.py
-|   `-- migrations
-|       |-- 0001_initial.py
-|       `-- __init__.py
-|-- templates
-|   |-- all-blogs.html
-|   |-- blog-details.html
-|   |-- index.html
-|   |-- login.html
-|   `-- signup.html
-`-- ai-blog
-    |-- pyvenv.cfg
-    |-- Scripts
-    |   |-- activate
-    |   |-- activate.bat
-    |   |-- Activate.ps1
-    |   `-- deactivate.bat
-    `-- share
-        |-- bash-completion
-        |   `-- completions
-        |       `-- yt-dlp
-        |-- fish
-        |   `-- vendor_completions.d
-        |       `-- yt-dlp.fish
-        `-- zsh
-            `-- site-functions
-                `-- _yt-dlp
- ` ` `
+berkustuner-video2text_article_generator/
+    manage.py
+    ai_blog_app/
+        __init__.py
+        asgi.py
+        settings.py
+        urls.py
+        wsgi.py
+    blog_generator/
+        __init__.py
+        admin.py
+        apps.py
+        models.py
+        tests.py
+        urls.py
+        views.py
+        migrations/
+            0001_initial.py
+            __init__.py
+    templates/
+        all-blogs.html
+        blog-details.html
+        index.html
+        login.html
+        signup.html
+    ai-blog/
+        pyvenv.cfg
+        Scripts/
+            activate
+            activate.bat
+            Activate.ps1
+            deactivate.bat
+        share/
+            bash-completion/
+                completions/
+                    yt-dlp
+            fish/
+                vendor_completions.d/
+                    yt-dlp.fish
+            zsh/
+                site-functions/
+                    _yt-dlp
+
 
 
 ---
@@ -109,7 +108,7 @@ berkustuner-video2text_article_generator
 4. Ortam değişkenleri ayarla  
    Proje kök dizinine `.env` dosyası oluştur:  
 
-   DATABASE_URL=sqlite:///db.sqlite3  
+   DATABASE_URL=postgres://app:secret@localhost:5432/appdb  
    ASSEMBLYAI_API_KEY=<your_assemblyai_api_key>  
 
 5. Veritabanı migrate et  
