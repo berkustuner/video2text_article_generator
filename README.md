@@ -37,27 +37,48 @@ AI destekli bu Django projesi, bir **YouTube videosunun linkini** alarak:
 ## 🗂️ Proje Yapısı
 
 berkustuner-video2text_article_generator/
-│
 ├── manage.py
-├── ai_blog_app/              # Django ana config
+├── ai_blog_app/
+│   ├── __init__.py
+│   ├── asgi.py
 │   ├── settings.py
 │   ├── urls.py
 │   └── wsgi.py
-│
-├── blog_generator/           # Ana uygulama
-│   ├── models.py             # BlogPost modeli
-│   ├── views.py              # Tüm iş mantığı
+├── blog_generator/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
 │   ├── urls.py
-│   └── templates/            # HTML sayfaları
-│
+│   ├── views.py
+│   └── migrations/
+│       ├── 0001_initial.py
+│       └── __init__.py
 ├── templates/
-│   ├── index.html            # Ana sayfa (blog oluştur)
-│   ├── all-blogs.html        # Kaydedilen blog listesi
-│   ├── blog-details.html     # Blog detay sayfası
+│   ├── all-blogs.html
+│   ├── blog-details.html
+│   ├── index.html
 │   ├── login.html
 │   └── signup.html
-│
-└── ai-blog/                  # Sanal ortam (virtualenv)
+└── ai-blog/
+    ├── pyvenv.cfg
+    ├── Scripts/
+    │   ├── activate
+    │   ├── activate.bat
+    │   ├── Activate.ps1
+    │   └── deactivate.bat
+    └── share/
+        ├── bash-completion/
+        │   └── completions/
+        │       └── yt-dlp
+        ├── fish/
+        │   └── vendor_completions.d/
+        │       └── yt-dlp.fish
+        └── zsh/
+            └── site-functions/
+                └── _yt-dlp
+
 
 ---
 
