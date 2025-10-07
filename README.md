@@ -25,7 +25,7 @@ AI destekli bu Django projesi, bir **YouTube videosunun linkini** alarak:
 | Katman | Teknoloji |
 |:--|:--|
 | Backend | Django 5.2 |
-| Database | SQLite (varsayılan) |
+| Database | Postgres 16 (Docker Containerda Çalışıyor) |
 | AI Text Gen | Ollama (llama3.1) |
 | Speech-to-Text | AssemblyAI API |
 | Video Download | yt-dlp / pytubefix |
@@ -110,7 +110,7 @@ berkustuner-video2text_article_generator/
 4. Ortam değişkenleri ayarla  
    Proje kök dizinine `.env` dosyası oluştur:  
 
-   DATABASE_URL=postgres://app:secret@localhost:5432/appdb  
+   DATABASE_URL=postgres://app:secret@localhost:5432/appdb (Docker Desktop yükleyip Postgres 16 imajını pulladıktan sonra database'i ayarla)
    ASSEMBLYAI_API_KEY=<your_assemblyai_api_key>  
 
 5. Veritabanı migrate et  
